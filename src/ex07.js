@@ -6,7 +6,30 @@ let nb2 = calc('-', 6, 4) // nb2 === 2
 let nb3 = calc('*', 4, 5) // nb3 === 20
 let nb4 = calc('/', 10, 2) // nb4 == 5
 */
+function add(nb1, nb2) {
+    return nb1 + nb2
+}
+function sub(nb1, nb2) {
+    return nb1 - nb2
+}
+function mul(nb1, nb2) {
+    return nb1 * nb2
+}
+function div(nb1, nb2) {
+    return nb1 / nb2
+}
 
-function calc(a, b, c) {
-    return
+const calc = (op, nb1, nb2) => {
+    switch (op) {
+        case '+':
+            return add(nb1, nb2)
+        case '-':
+            return sub(nb1, nb2)
+        case '*':
+            return mul(nb1, nb2)
+        case '/':
+            return div(nb1, nb2)
+        default:
+            console.log('Error : Unknown operator')
+    }
 }
