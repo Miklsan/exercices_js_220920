@@ -4,7 +4,7 @@ Vous devez absolument utiliser une fonction récursive pour résoudre ce problè
 function zeroToMille(start = 1, end = 1000) {
     console.log(start)
     let next = start + 1
-    while (start < end) {
+    if (start < end) {
         zeroToMille(next, end)
     }
 }
